@@ -1,0 +1,27 @@
+name: Update partialResults
+on:
+  schedule:
+    - cron:  '0 0 10 * *'
+jobs:
+  update-dep:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: mlugg/setup-zig@v2
+        with:
+          version: 0.13.0
+      - name: Update partialResults
+        run: |
+          bash update_partialResults.sh
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v7
+        with:
+            token: ${{ secrets.PAT }}
+            commit-message: Update partialResults
+            title: Update partialResults
+            body: |
+              - partialResults updates
+  
+              Auto-generated
+  
+            branch: main

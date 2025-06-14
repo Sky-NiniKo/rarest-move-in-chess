@@ -4,8 +4,11 @@ on:
   schedule:
     - cron:  '0 0 10 * *'
 jobs:
-  update-dep:
+  update:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - uses: mlugg/setup-zig@v2

@@ -7,7 +7,7 @@ pub fn build(b: *std.Build) void {
     {
         const exe = b.addExecutable(.{
             .name = "chesspgn",
-            .root_source_file = .{ .path = "src/chessmoves.zig" },
+            .root_source_file = b.path("src/chessmoves.zig"),
             .target = target,
             .optimize = optimize,
         });
@@ -29,7 +29,7 @@ pub fn build(b: *std.Build) void {
     }
 
     const exe_tests = b.addTest(.{
-        .root_source_file = .{ .path = "src/chessmoves.zig" },
+        .root_source_file = b.path("src/chessmoves.zig"),
         .target = target,
         .optimize = optimize,
     });

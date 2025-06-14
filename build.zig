@@ -12,7 +12,7 @@ pub fn build(b: *std.Build) void {
             .optimize = optimize,
         });
         exe.linkLibC();
-        exe.linkSystemLibrary("System");
+        // exe.linkSystemLibrary("System");
 
         // enable profiling (if you pass env var CPUPROFILE=name.prof when running)
         // exe.addIncludePath(.{ .path = "/usr/local/Cellar/gperftools/2.9.1_1/lib" });

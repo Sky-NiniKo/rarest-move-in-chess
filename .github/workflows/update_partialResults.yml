@@ -1,5 +1,6 @@
 name: Update partialResults
 on:
+  workflow_dispatch:
   schedule:
     - cron:  '0 0 10 * *'
 jobs:

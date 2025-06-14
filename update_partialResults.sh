@@ -59,3 +59,5 @@ curl -s "$DATABASE_URL" | while IFS= read -r url || [[ -n "$url" ]]; do # [[-n "
     curl -s "$url" | zstdcat | zig build run -Doptimize=ReleaseFast  -- collect > "$result_json_file"
 
 done
+
+zig build run -Doptimize=ReleaseFast  -- analyze partialResults/

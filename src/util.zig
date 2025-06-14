@@ -147,7 +147,7 @@ fn FormatCommaImpl() type {
             if (options.width) |width| {
                 var toFill = @as(i64, @intCast(width)) - @as(i64, @intCast(size));
                 while (toFill > 0) : (toFill -= 1) {
-                    try writer.writeAll(&[1]u8{options.fill});
+                    try writer.writeAll(" ");
                 }
             }
 

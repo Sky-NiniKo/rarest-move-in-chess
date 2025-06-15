@@ -56,8 +56,8 @@ curl -s "$DATABASE_URL" | while IFS= read -r url || [[ -n "$url" ]]; do # [[-n "
 
     # 3. If not processed (or empty), execute the command
     echo "Processing $filename_pgn_zst"
-    curl -s "$url" | zstdcat | zig build run -Doptimize=ReleaseFast  -- collect > "$result_json_file"
+    curl -s "$url" | zstdcat | zig build run -Doptimize=ReleaseFast -- collect > "$result_json_file"
 
 done
 
-zig build run -Doptimize=ReleaseFast  -- analyze partialResults/
+zig build run -Doptimize=ReleaseFast -- analyze $RESULTS_DIR

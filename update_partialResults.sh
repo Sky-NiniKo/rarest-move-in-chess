@@ -20,9 +20,14 @@ if ! command -v zstdcat &> /dev/null; then
     echo "Error: zstdcat is not installed or not in PATH."
     exit 1
 fi
-if ! command -v zig &> /dev/null; then
-    echo "Error: zig is not installed or not in PATH."
-    exit 1
+if [ ! -x zig-out/bin/chesspgn ]; then
+    echo "Building zig program..."
+    if ! command -v zig &> /dev/null; then
+        echo "Error: zig is not installed or not in PATH."
+        exit 1
+    else
+        zig build -Doptimize=ReleaseFast
+    fi
 fi
 
 # --- Main Logic ---
@@ -30,17 +35,17 @@ fi
 # Create the results directory if it doesn't exist
 mkdir -p "$RESULTS_DIR"
 
-echo "Fetching database updates"
+echo "Fetching updates..."
 # Fetch the list of URLs. Use process substitution to feed it to the loop.
 # `IFS= read -r url` is robust for reading lines.
-curl -s "$DATABASE_URL" | while IFS= read -r url || [[ -n "$url" ]]; do # [[-n "$url"]] handles last line if no newline
+# [[-n "$url"]] handles last line if no newline
+curl -s "$DATABASE_URL" | while IFS= read -r url || [[ -n "$url" ]]; do 
     # 1. Derive filenames
 
     # Get the filename part from the URL (e.g., lichess_db_standard_rated_2025-04.pgn.zst)
     filename_pgn_zst="${url##*/}"
 
-    # Get the base filename by removing .pgn.zst
-    # (e.g., lichess_db_standard_rated_2025-04)
+    # Get the base filename by removing .pgn.zst (e.g., lichess_db_standard_rated_2025-04)
     base_filename="${filename_pgn_zst%%.pgn.zst}"
 
     # Construct the expected result JSON filename
@@ -56,8 +61,9 @@ curl -s "$DATABASE_URL" | while IFS= read -r url || [[ -n "$url" ]]; do # [[-n "
 
     # 3. If not processed (or empty), execute the command
     echo "Processing $filename_pgn_zst"
-    curl -s "$url" | zstdcat | zig build run -Doptimize=ReleaseFast -- collect > "$result_json_file"
+    curl -s "$url" | zstdcat | zig-out/bin/chesspgn collect > "$result_json_file"
 
 done
 
-zig build run -Doptimize=ReleaseFast -- analyze $RESULTS_DIR
+# Rebuild the results
+zig-out/bin/chesspgn analyze $RESULTS_DIR

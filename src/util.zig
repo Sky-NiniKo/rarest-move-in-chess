@@ -82,11 +82,7 @@ fn FormatProgressImpl() type {
             try writer.writeAll("▌ ");
 
             // write percentage
-            try std.fmt.formatFloatDecimal(100.0 * progress, .{
-                .precision = 1,
-                .width = 4,
-            }, writer);
-            try writer.writeAll("%");
+            try std.fmt.format(writer, "{d:.1}%", .{100.0 * progress});
         }
     };
 }
@@ -147,7 +143,8 @@ fn FormatCommaImpl() type {
             if (options.width) |width| {
                 var toFill = @as(i64, @intCast(width)) - @as(i64, @intCast(size));
                 while (toFill > 0) : (toFill -= 1) {
-                    try writer.writeAll(" ");
+                    // TODO: should write options.fill
+                    try writer.writeAll("x");
                 }
             }
 
@@ -276,7 +273,7 @@ test "formatProgress" {
         \\▐████████████████████▌ 100.0%
     ;
 
-    var linesIterator = std.mem.split(u8, expected, "\n");
+    var linesIterator = std.mem.splitSequence(u8, expected, "\n");
     var i: u32 = 0;
     while (linesIterator.next()) |expect| {
         written = try std.fmt.bufPrint(&buf, "{}", .{fmtProgress(i, @as(u32, 100))});

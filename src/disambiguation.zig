@@ -56,14 +56,14 @@ pub fn isDisambiguation(move: []const u8) ?Disambiguation {
 }
 
 test "disambiguation" {
-    try std.testing.expectFmt("analyze.Disambiguation{ .piece = 81, .from = { 97 }, .to = { 98, 49 }, .isFile = true, .isRank = false, .isRankFile = false, .isCapture = false }", "{?}", .{isDisambiguation("Qab1")});
-    try std.testing.expectFmt("analyze.Disambiguation{ .piece = 81, .from = { 97, 50 }, .to = { 98, 49 }, .isFile = false, .isRank = false, .isRankFile = true, .isCapture = false }", "{?}", .{isDisambiguation("Qa2b1")});
-    try std.testing.expectFmt("analyze.Disambiguation{ .piece = 81, .from = { 97 }, .to = { 98, 49 }, .isFile = true, .isRank = false, .isRankFile = false, .isCapture = false }", "{?}", .{isDisambiguation("Qab1")});
-    try std.testing.expectFmt("analyze.Disambiguation{ .piece = 81, .from = { 97 }, .to = { 98, 49 }, .isFile = true, .isRank = false, .isRankFile = false, .isCapture = true }", "{?}", .{isDisambiguation("Qaxb1")});
-    try std.testing.expectFmt("analyze.Disambiguation{ .piece = 81, .from = { 97, 49 }, .to = { 98, 49 }, .isFile = false, .isRank = false, .isRankFile = true, .isCapture = true }", "{?}", .{isDisambiguation("Qa1xb1")});
-    try std.testing.expectFmt("analyze.Disambiguation{ .piece = 66, .from = { 97, 49 }, .to = { 98, 49 }, .isFile = false, .isRank = false, .isRankFile = true, .isCapture = true }", "{?}", .{isDisambiguation("Ba1xb1+")});
-    try std.testing.expectFmt("analyze.Disambiguation{ .piece = 78, .from = { 49 }, .to = { 98, 49 }, .isFile = false, .isRank = true, .isRankFile = false, .isCapture = false }", "{?}", .{isDisambiguation("N1b1")});
-    try std.testing.expectFmt("analyze.Disambiguation{ .piece = 78, .from = { 49 }, .to = { 98, 49 }, .isFile = false, .isRank = true, .isRankFile = false, .isCapture = false }", "{?}", .{isDisambiguation("N1b1#")});
+    try std.testing.expectFmt("disambiguation.Disambiguation{ .piece = 81, .from = { 97 }, .to = { 98, 49 }, .isFile = true, .isRank = false, .isRankFile = false, .isCapture = false }", "{?}", .{isDisambiguation("Qab1")});
+    try std.testing.expectFmt("disambiguation.Disambiguation{ .piece = 81, .from = { 97, 50 }, .to = { 98, 49 }, .isFile = false, .isRank = false, .isRankFile = true, .isCapture = false }", "{?}", .{isDisambiguation("Qa2b1")});
+    try std.testing.expectFmt("disambiguation.Disambiguation{ .piece = 81, .from = { 97 }, .to = { 98, 49 }, .isFile = true, .isRank = false, .isRankFile = false, .isCapture = false }", "{?}", .{isDisambiguation("Qab1")});
+    try std.testing.expectFmt("disambiguation.Disambiguation{ .piece = 81, .from = { 97 }, .to = { 98, 49 }, .isFile = true, .isRank = false, .isRankFile = false, .isCapture = true }", "{?}", .{isDisambiguation("Qaxb1")});
+    try std.testing.expectFmt("disambiguation.Disambiguation{ .piece = 81, .from = { 97, 49 }, .to = { 98, 49 }, .isFile = false, .isRank = false, .isRankFile = true, .isCapture = true }", "{?}", .{isDisambiguation("Qa1xb1")});
+    try std.testing.expectFmt("disambiguation.Disambiguation{ .piece = 66, .from = { 97, 49 }, .to = { 98, 49 }, .isFile = false, .isRank = false, .isRankFile = true, .isCapture = true }", "{?}", .{isDisambiguation("Ba1xb1+")});
+    try std.testing.expectFmt("disambiguation.Disambiguation{ .piece = 78, .from = { 49 }, .to = { 98, 49 }, .isFile = false, .isRank = true, .isRankFile = false, .isCapture = false }", "{?}", .{isDisambiguation("N1b1")});
+    try std.testing.expectFmt("disambiguation.Disambiguation{ .piece = 78, .from = { 49 }, .to = { 98, 49 }, .isFile = false, .isRank = true, .isRankFile = false, .isCapture = false }", "{?}", .{isDisambiguation("N1b1#")});
     try std.testing.expect(isDisambiguation("b1") == null);
     try std.testing.expect(isDisambiguation("axb1") == null);
     try std.testing.expect(isDisambiguation("Qb1") == null);

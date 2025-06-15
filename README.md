@@ -8,7 +8,7 @@ However, since there are many moves that never happen, this is moreso counting a
 
 ## Running
 
-This was written using zig 0.12.0.
+This was written using zig 0.14.1.
 
 This analysis is done in 2 separate phases (and hence programs)
 

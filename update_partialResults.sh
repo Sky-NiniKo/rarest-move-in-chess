@@ -20,14 +20,10 @@ if ! command -v zstdcat &> /dev/null; then
     echo "Error: zstdcat is not installed or not in PATH."
     exit 1
 fi
-if [ ! -x zig-out/bin/chesspgn ]; then
-    echo "Building zig program..."
-    if ! command -v zig &> /dev/null; then
-        echo "Error: zig is not installed or not in PATH."
-        exit 1
-    else
-        zig build -Doptimize=ReleaseFast
-    fi
+
+if ! command -v zig &> /dev/null; then
+    echo "Error: zig is not installed or not in PATH."
+    exit 1
 fi
 
 # --- Main Logic ---
@@ -61,9 +57,9 @@ curl -s "$DATABASE_URL" | while IFS= read -r url || [[ -n "$url" ]]; do
 
     # 3. If not processed (or empty), execute the command
     echo "Processing $filename_pgn_zst"
-    curl -s "$url" | zstdcat | zig-out/bin/chesspgn collect > "$result_json_file"
+    curl -s "$url" | zstdcat | zig build run -Doptimize=ReleaseFast -- collect > "$result_json_file"
 
 done
 
-# Rebuild the results
-zig-out/bin/chesspgn analyze $RESULTS_DIR
+# Rebuild the results, doesn't work on github
+# zig build run -Doptimize=ReleaseFast -- analyze $RESULTS_DIR

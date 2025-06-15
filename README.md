@@ -81,223 +81,223 @@ Reading data from lichess_db_standard_rated_2021-11.result.json
 
 ...
 
-Reading data from lichess_db_standard_rated_2017-12.result.json
-  > Games:     16,191,145  Moves:  1,090,745,082      Bytes: 34.3GB, BytesFromGames: 28.7GB      unique moves: 15,037, interesting games: 0
 Reading data from lichess_db_standard_rated_2018-07.result.json
   > Games:     21,027,590  Moves:  1,411,274,965      Bytes: 44.8GB, BytesFromGames: 37.0GB      unique moves: 15,152, interesting games: 0
+Reading data from lichess_db_standard_rated_2025-05.result.json
+  > Games:     93,893,357  Moves:  6,250,217,326      Bytes: 0.2TB, BytesFromGames: 0.2TB      unique moves: 16,636, interesting games: 2
 
 wrote combined result data to results.json
 wrote simplified result data to simplified_results.json
 
-Total Moves:     342,490,585,837
-Unique Moves:             21,373
-Total Games:       5,163,425,477
-Data processed (uncompressed): 11.3TB
-Data processed (uncompressed, excluding annotations): 9.4TB
+Total Moves:     447,975,801,885
+Unique Moves:             21,761
+Total Games:       6,746,386,047
+Data processed (uncompressed): 15.0TB
+Data processed (uncompressed, excluding annotations): 12.5TB
 
 
-Total moves:    342,490,585,837           -  21,373 unique (71.83% coverage)
+Total moves:    447,975,801,885           -  21,761 unique (73.14% coverage)
 
-♟ Pawn moves:    95,553,301,110 (27.90%)  -     924 unique (100.00% coverage)
-♚ King moves:    37,122,221,520 (10.84%)  -     382 unique (99.48% coverage)
-♜ Rook moves:    48,055,626,263 (14.03%)  -   5,295 unique (96.77% coverage)
-♞ Knight moves:  59,629,230,254 (17.41%)  -   2,909 unique (72.15% coverage)
-♛ Queen moves:   42,061,708,229 (12.28%)  -   9,216 unique (66.90% coverage)
-♝ Bishop moves:  52,179,069,156 (15.24%)  -   2,641 unique (51.18% coverage)
+♟ Pawn moves:   125,013,061,889 (27.91%)  -     924 unique (100.00% coverage)
+♚ King moves:    48,278,775,887 (10.78%)  -     382 unique (99.48% coverage)
+♜ Rook moves:    62,851,344,542 (14.03%)  -   5,296 unique (96.78% coverage)
+♞ Knight moves:  78,106,636,699 (17.44%)  -   2,946 unique (73.07% coverage)
+♛ Queen moves:   55,082,004,400 (12.30%)  -   9,419 unique (68.37% coverage)
+♝ Bishop moves:  68,296,405,479 (15.25%)  -   2,788 unique (54.03% coverage)
 
-         23.87% of all moves are captures
-          7.13% of all moves are checks
-          0.40% of all moves are checkmates
-          2.45% of all moves are capture checks
+         23.83% of all moves are captures
+          7.09% of all moves are checks
+          0.39% of all moves are checkmates
+          2.44% of all moves are capture checks
           0.13% of all moves are capture checkmates
 
-    905,956,248 promotions (0.26% of moves)
-    885,814,970 ♛ Queen promotions  (97.78% of promotions)
-     12,174,403 ♜ Rook promotions   (1.34% of promotions)
-      5,473,818 ♞ Knight promotions (0.60% of promotions)
-      2,493,057 ♝ Bishop promotions (0.28% of promotions)
+  1,167,983,860 promotions (0.26% of moves)
+  1,141,261,455 ♛ Queen promotions  (97.71% of promotions)
+     16,140,748 ♜ Rook promotions   (1.38% of promotions)
+      7,313,072 ♞ Knight promotions (0.63% of promotions)
+      3,268,585 ♝ Bishop promotions (0.28% of promotions)
 
-  6,640,013,855 O-O    moves
-  1,221,306,721 O-O-O  moves
-      2,052,673 O-O+   moves
-     26,005,452 O-O-O+ moves
-         16,754 O-O#   moves
-         33,850 O-O-O# moves
+  8,698,521,745 O-O    moves
+  1,612,669,978 O-O-O  moves
+      2,690,462 O-O+   moves
+     33,625,017 O-O-O+ moves
+         21,730 O-O#   moves
+         44,057 O-O-O# moves
 
-     47,111,628 ♟ Pawn mates (0.0137556%)
-        660,664 potential en passant pawn mates (0.0001929%)
-         16,754 short castle mates (0.0000049%)
-         33,850 long castle mates (0.0000099%)
+     60,856,143 ♟ Pawn mates (0.0135847%)
+        858,627 potential en passant pawn mates (0.0001917%)
+         21,730 short castle mates (0.0000049%)
+         44,057 long castle mates (0.0000098%)
 
-    880,774,212 ♛ Queen mates   (0.25717% of all moves) (64.82% of mates)
-    344,839,104 ♜ Rook mates    (0.10069% of all moves) (25.38% of mates)
-     47,111,628 ♟ Pawn mates    (0.01376% of all moves) (3.47% of mates)
-     43,678,167 ♝ Bishop mates  (0.01275% of all moves) (3.21% of mates)
-     42,067,185 ♞ Knight mates  (0.01228% of all moves) (3.10% of mates)
-        353,344 ♚ King mates    (0.00010% of all moves) (0.03% of mates)
+  1,137,261,953 ♛ Queen mates   (0.25387% of all moves) (64.82% of mates)
+    444,895,594 ♜ Rook mates    (0.09931% of all moves) (25.36% of mates)
+     60,856,143 ♟ Pawn mates    (0.01358% of all moves) (3.47% of mates)
+     56,418,635 ♝ Bishop mates  (0.01259% of all moves) (3.22% of mates)
+     54,523,104 ♞ Knight mates  (0.01217% of all moves) (3.11% of mates)
+        457,029 ♚ King mates    (0.00010% of all moves) (0.03% of mates)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♛ Queen ♛ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- 42,061,708,229 Queen total (12.281128290%)
- 13,639,117,622 Queen total captures (3.982333584%)
-  8,705,551,293 Queen total checks (2.541836667%)
-    880,774,212 Queen total mates (0.257167423%)
-  2,721,775,678 Queen total capture checks (0.794700874%)
-    331,056,415 Queen total capture mates (0.096661464%)
+ 55,082,004,400 Queen total (12.295754406%)
+ 17,799,789,576 Queen total captures (3.973381933%)
+ 11,327,571,728 Queen total checks (2.528612412%)
+  1,137,261,953 Queen total mates (0.253866827%)
+  3,532,316,646 Queen total capture checks (0.788506127%)
+    427,088,110 Queen total capture mates (0.095337317%)
 
-    167,885,606 Queen file disambiguations (0.049019043%)
-     12,105,866 Queen file disambiguations captures (0.003534657%)
-     81,439,886 Queen file disambiguations checks (0.023778723%)
-     38,694,497 Queen file disambiguations mates (0.011297974%)
-      5,574,810 Queen file disambiguations capture checks (0.001627726%)
-      2,984,112 Queen file disambiguations capture mates (0.000871298%)
+    215,909,349 Queen file disambiguations (0.048196654%)
+     15,571,759 Queen file disambiguations captures (0.003476027%)
+    104,763,476 Queen file disambiguations checks (0.023385968%)
+     49,826,653 Queen file disambiguations mates (0.011122622%)
+      7,172,569 Queen file disambiguations capture checks (0.001601106%)
+      3,825,707 Queen file disambiguations capture mates (0.000853999%)
 
-     15,893,376 Queen rank disambiguations (0.004640529%)
-      1,736,300 Queen rank disambiguations captures (0.000506963%)
-      7,635,454 Queen rank disambiguations checks (0.002229391%)
-      2,837,596 Queen rank disambiguations mates (0.000828518%)
-        824,270 Queen rank disambiguations capture checks (0.000240669%)
-        403,989 Queen rank disambiguations capture mates (0.000117956%)
+     20,413,263 Queen rank disambiguations (0.004556778%)
+      2,238,234 Queen rank disambiguations captures (0.000499633%)
+      9,792,213 Queen rank disambiguations checks (0.002185880%)
+      3,642,606 Queen rank disambiguations mates (0.000813126%)
+      1,061,299 Queen rank disambiguations capture checks (0.000236910%)
+        518,935 Queen rank disambiguations capture mates (0.000115840%)
 
-         63,199 Queen double disambiguations (0.000018453%)
-            597 Queen double disambiguations captures (0.000000174%)
-         13,991 Queen double disambiguations checks (0.000004085%)
-         10,557 Queen double disambiguations mates (0.000003082%)
-            199 Queen double disambiguations capture checks (0.000000058%)
-            179 Queen double disambiguations capture mates (0.000000052%)
+         82,061 Queen double disambiguations (0.000018318%)
+            743 Queen double disambiguations captures (0.000000166%)
+         17,948 Queen double disambiguations checks (0.000004006%)
+         13,599 Queen double disambiguations mates (0.000003036%)
+            252 Queen double disambiguations capture checks (0.000000056%)
+            223 Queen double disambiguations capture mates (0.000000050%)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♝ Bishop ♝ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- 52,179,069,156 Bishop total (15.235183481%)
- 15,082,611,403 Bishop total captures (4.403803207%)
-  3,404,834,022 Bishop total checks (0.994139449%)
-     43,678,167 Bishop total mates (0.012753100%)
-  1,569,400,318 Bishop total capture checks (0.458231666%)
-     12,032,846 Bishop total capture mates (0.003513336%)
+ 68,296,405,479 Bishop total (15.245556834%)
+ 19,683,759,465 Bishop total captures (4.393933642%)
+  4,430,141,465 Bishop total checks (0.988924278%)
+     56,418,635 Bishop total mates (0.012594126%)
+  2,044,388,000 Bishop total capture checks (0.456361257%)
+     15,539,155 Bishop total capture mates (0.003468749%)
 
-        189,259 Bishop file disambiguations (0.000055260%)
-          5,044 Bishop file disambiguations captures (0.000001473%)
-         30,622 Bishop file disambiguations checks (0.000008941%)
-          4,277 Bishop file disambiguations mates (0.000001249%)
-            694 Bishop file disambiguations capture checks (0.000000203%)
-            109 Bishop file disambiguations capture mates (0.000000032%)
+        246,933 Bishop file disambiguations (0.000055122%)
+          6,422 Bishop file disambiguations captures (0.000001434%)
+         39,993 Bishop file disambiguations checks (0.000008927%)
+          5,593 Bishop file disambiguations mates (0.000001249%)
+            869 Bishop file disambiguations capture checks (0.000000194%)
+            141 Bishop file disambiguations capture mates (0.000000031%)
 
-         22,035 Bishop rank disambiguations (0.000006434%)
-            607 Bishop rank disambiguations captures (0.000000177%)
-            383 Bishop rank disambiguations checks (0.000000112%)
-             74 Bishop rank disambiguations mates (0.000000022%)
-            116 Bishop rank disambiguations capture checks (0.000000034%)
-             26 Bishop rank disambiguations capture mates (0.000000008%)
+         28,967 Bishop rank disambiguations (0.000006466%)
+            771 Bishop rank disambiguations captures (0.000000172%)
+            490 Bishop rank disambiguations checks (0.000000109%)
+             98 Bishop rank disambiguations mates (0.000000022%)
+            149 Bishop rank disambiguations capture checks (0.000000033%)
+             36 Bishop rank disambiguations capture mates (0.000000008%)
 
-            665 Bishop double disambiguations (0.000000194%)
-              0 Bishop double disambiguations captures (0.000000000%)
-              3 Bishop double disambiguations checks (0.000000001%)
-              1 Bishop double disambiguations mates (0.000000000%)
+            887 Bishop double disambiguations (0.000000198%)
+              7 Bishop double disambiguations captures (0.000000002%)
+              7 Bishop double disambiguations checks (0.000000002%)
+             10 Bishop double disambiguations mates (0.000000002%)
               0 Bishop double disambiguations capture checks (0.000000000%)
-              0 Bishop double disambiguations capture mates (0.000000000%)
+              5 Bishop double disambiguations capture mates (0.000000001%)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♞ Knight ♞ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- 59,629,230,254 Knight total (17.410472790%)
- 13,976,641,351 Knight total captures (4.080883367%)
-  3,649,343,699 Knight total checks (1.065531098%)
-     42,067,185 Knight total mates (0.012282727%)
-  1,361,943,120 Knight total capture checks (0.397658557%)
-      7,976,620 Knight total capture mates (0.002329004%)
+ 78,106,636,699 Knight total (17.435458873%)
+ 18,241,910,886 Knight total captures (4.072075056%)
+  4,761,067,279 Knight total checks (1.062795637%)
+     54,523,104 Knight total mates (0.012170993%)
+  1,776,887,918 Knight total capture checks (0.396648192%)
+     10,328,967 Knight total capture mates (0.002305698%)
 
-  3,229,888,533 Knight file disambiguations (0.943059070%)
-    303,724,314 Knight file disambiguations captures (0.088681069%)
-     38,452,511 Knight file disambiguations checks (0.011227319%)
-        470,315 Knight file disambiguations mates (0.000137322%)
-      8,525,010 Knight file disambiguations capture checks (0.002489122%)
-         51,465 Knight file disambiguations capture mates (0.000015027%)
+  4,272,177,795 Knight file disambiguations (0.953662626%)
+    398,293,043 Knight file disambiguations captures (0.088909499%)
+     50,215,374 Knight file disambiguations checks (0.011209394%)
+        609,931 Knight file disambiguations mates (0.000136153%)
+     11,137,500 Knight file disambiguations capture checks (0.002486183%)
+         66,457 Knight file disambiguations capture mates (0.000014835%)
 
-    154,952,344 Knight rank disambiguations (0.045242804%)
-     11,417,031 Knight rank disambiguations captures (0.003333531%)
-      4,118,533 Knight rank disambiguations checks (0.001202524%)
-         66,601 Knight rank disambiguations mates (0.000019446%)
-        569,808 Knight rank disambiguations capture checks (0.000166372%)
-          5,654 Knight rank disambiguations capture mates (0.000001651%)
+    205,389,389 Knight rank disambiguations (0.045848322%)
+     15,075,583 Knight rank disambiguations captures (0.003365267%)
+      5,361,652 Knight rank disambiguations checks (0.001196862%)
+         86,415 Knight rank disambiguations mates (0.000019290%)
+        742,118 Knight rank disambiguations capture checks (0.000165660%)
+          7,327 Knight rank disambiguations capture mates (0.000001636%)
 
-          1,973 Knight double disambiguations (0.000000576%)
-              3 Knight double disambiguations captures (0.000000001%)
-            544 Knight double disambiguations checks (0.000000159%)
-             45 Knight double disambiguations mates (0.000000013%)
+          2,582 Knight double disambiguations (0.000000576%)
+              9 Knight double disambiguations captures (0.000000002%)
+            732 Knight double disambiguations checks (0.000000163%)
+             66 Knight double disambiguations mates (0.000000015%)
               1 Knight double disambiguations capture checks (0.000000000%)
-              0 Knight double disambiguations capture mates (0.000000000%)
+              6 Knight double disambiguations capture mates (0.000000001%)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♜ Rook ♜ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- 48,055,626,263 Rook total (14.031225456%)
- 13,191,210,090 Rook total captures (3.851554068%)
-  6,869,586,799 Rook total checks (2.005773905%)
-    344,839,104 Rook total mates (0.100685718%)
-  2,126,943,004 Rook total capture checks (0.621022326%)
-     84,667,929 Rook total capture mates (0.024721243%)
+ 62,851,344,542 Rook total (14.030075794%)
+ 17,210,396,158 Rook total captures (3.841813796%)
+  8,945,892,421 Rook total checks (1.996958850%)
+    444,895,594 Rook total mates (0.099312416%)
+  2,769,090,479 Rook total capture checks (0.618133941%)
+    109,285,077 Rook total capture mates (0.024395308%)
 
-  6,989,702,805 Rook file disambiguations (2.040845236%)
-    302,772,646 Rook file disambiguations captures (0.088403202%)
-    189,322,324 Rook file disambiguations checks (0.055278110%)
-     11,951,245 Rook file disambiguations mates (0.003489511%)
-     28,804,596 Rook file disambiguations capture checks (0.008410332%)
-      2,955,532 Rook file disambiguations capture mates (0.000862953%)
+  9,187,680,591 Rook file disambiguations (2.050932339%)
+    395,492,746 Rook file disambiguations captures (0.088284399%)
+    246,131,900 Rook file disambiguations checks (0.054943124%)
+     15,498,268 Rook file disambiguations mates (0.003459622%)
+     37,577,952 Rook file disambiguations capture checks (0.008388389%)
+      3,822,271 Rook file disambiguations capture mates (0.000853232%)
 
-    383,615,672 Rook rank disambiguations (0.112007654%)
-     37,238,224 Rook rank disambiguations captures (0.010872773%)
-     63,244,905 Rook rank disambiguations checks (0.018466173%)
-      6,869,381 Rook rank disambiguations mates (0.002005714%)
-      2,578,022 Rook rank disambiguations capture checks (0.000752728%)
-         91,201 Rook rank disambiguations capture mates (0.000026629%)
+    503,615,126 Rook rank disambiguations (0.112420163%)
+     48,869,632 Rook rank disambiguations captures (0.010908989%)
+     81,866,703 Rook rank disambiguations checks (0.018274805%)
+      8,888,844 Rook rank disambiguations mates (0.001984224%)
+      3,353,563 Rook rank disambiguations capture checks (0.000748604%)
+        118,157 Rook rank disambiguations capture mates (0.000026376%)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♚ King ♚ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- 37,122,221,520 King total (10.838902748%)
-  4,176,599,794 King total captures (1.219478715%)
-     28,208,571 King total checks (0.008236306%)
-        353,344 King total mates (0.000103169%)
-      2,006,264 King total capture checks (0.000585787%)
-         13,677 King total capture mates (0.000003993%)
+ 48,278,775,887 King total (10.777094585%)
+  5,421,386,513 King total captures (1.210196285%)
+     36,407,259 King total checks (0.008127059%)
+        457,029 King total mates (0.000102021%)
+      2,593,185 King total capture checks (0.000578867%)
+         17,656 King total capture mates (0.000003941%)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♟ Pawn ♟ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
- 95,553,301,110 Pawn total (27.899540910%)
- 21,678,618,613 Pawn total captures (6.329697665%)
-  1,722,700,697 Pawn total checks (0.502992131%)
-     47,111,628 Pawn total mates (0.013755598%)
-    600,753,460 Pawn total capture checks (0.175407291%)
-      5,493,971 Pawn total capture mates (0.001604123%)
+125,013,061,889 Pawn total (27.906208631%)
+ 28,386,745,100 Pawn total captures (6.336669298%)
+  2,242,830,718 Pawn total checks (0.500658899%)
+     60,856,143 Pawn total mates (0.013584694%)
+    785,816,491 Pawn total capture checks (0.175414942%)
+      7,129,538 Pawn total capture mates (0.001591501%)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♟ → * Promotion ♟ → * ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    905,956,248 Promotion total (0.264520044%)
-     56,999,902 Promotion total captures (0.016642765%)
-    248,429,170 Promotion total checks (0.072536058%)
-     25,397,680 Promotion total mates (0.007415585%)
-     31,202,938 Promotion total capture checks (0.009110597%)
-      2,947,683 Promotion total capture mates (0.000860661%)
+  1,167,983,860 Promotion total (0.260724766%)
+     73,609,603 Promotion total captures (0.016431602%)
+    319,543,694 Promotion total checks (0.071330570%)
+     32,687,262 Promotion total mates (0.007296658%)
+     40,370,390 Promotion total capture checks (0.009011735%)
+      3,815,572 Promotion total capture mates (0.000851736%)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♟ → ♛ Promotion to Queen ♟ → ♛ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-    885,814,970 Promotion to Queen total (0.258639217%)
-     55,300,109 Promotion to Queen total captures (0.016146461%)
-    243,744,053 Promotion to Queen total checks (0.071168103%)
-     23,427,409 Promotion to Queen total mates (0.006840307%)
-     30,320,462 Promotion to Queen total capture checks (0.008852933%)
-      2,805,060 Promotion to Queen total capture mates (0.000819018%)
+  1,141,261,455 Promotion to Queen total (0.254759621%)
+     71,364,352 Promotion to Queen total captures (0.015930403%)
+    313,307,607 Promotion to Queen total checks (0.069938511%)
+     30,126,245 Promotion to Queen total mates (0.006724971%)
+     39,197,400 Promotion to Queen total capture checks (0.008749892%)
+      3,628,652 Promotion to Queen total capture mates (0.000810011%)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♟ → ♛ Promotion to Bishop ♟ → ♛ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-      2,493,057 Promotion to Bishop total (0.000727920%)
-        192,314 Promotion to Bishop total captures (0.000056152%)
-        759,651 Promotion to Bishop total checks (0.000221802%)
-         25,203 Promotion to Bishop total mates (0.000007359%)
-         36,117 Promotion to Bishop total capture checks (0.000010545%)
-            628 Promotion to Bishop total capture mates (0.000000183%)
+      3,268,585 Promotion to Bishop total (0.000729634%)
+        250,110 Promotion to Bishop total captures (0.000055831%)
+      1,000,899 Promotion to Bishop total checks (0.000223427%)
+         33,116 Promotion to Bishop total mates (0.000007392%)
+         47,972 Promotion to Bishop total capture checks (0.000010709%)
+            820 Promotion to Bishop total capture mates (0.000000183%)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♟ → ♛ Promotion to Knight ♟ → ♛ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-      5,473,818 Promotion to Knight total (0.001598239%)
-        627,566 Promotion to Knight total captures (0.000183236%)
-      2,000,154 Promotion to Knight total checks (0.000584003%)
-         30,414 Promotion to Knight total mates (0.000008880%)
-        347,448 Promotion to Knight total capture checks (0.000101447%)
-          3,370 Promotion to Knight total capture mates (0.000000984%)
+      7,313,072 Promotion to Knight total (0.001632470%)
+        832,250 Promotion to Knight total captures (0.000185780%)
+      2,694,839 Promotion to Knight total checks (0.000601559%)
+         40,906 Promotion to Knight total mates (0.000009131%)
+        463,291 Promotion to Knight total capture checks (0.000103419%)
+          4,526 Promotion to Knight total capture mates (0.000001010%)
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ ♟ → ♛ Promotion to Rook ♟ → ♛ ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-     12,174,403 Promotion to Rook total (0.003554668%)
-        879,913 Promotion to Rook total captures (0.000256916%)
-      1,925,312 Promotion to Rook total checks (0.000562150%)
-      1,914,654 Promotion to Rook total mates (0.000559038%)
-        498,911 Promotion to Rook total capture checks (0.000145671%)
-        138,625 Promotion to Rook total capture mates (0.000040476%)
+     16,140,748 Promotion to Rook total (0.003603040%)
+      1,162,891 Promotion to Rook total captures (0.000259588%)
+      2,540,349 Promotion to Rook total checks (0.000567073%)
+      2,486,995 Promotion to Rook total mates (0.000555163%)
+        661,727 Promotion to Rook total capture checks (0.000147715%)
+        181,574 Promotion to Rook total capture mates (0.000040532%)
 ```

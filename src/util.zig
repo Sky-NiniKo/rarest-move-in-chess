@@ -144,7 +144,7 @@ fn FormatCommaImpl() type {
                 var toFill = @as(i64, @intCast(width)) - @as(i64, @intCast(size));
                 while (toFill > 0) : (toFill -= 1) {
                     // TODO: should write options.fill
-                    try writer.writeAll("x");
+                    try writer.writeAll(" ");
                 }
             }
 
@@ -311,7 +311,7 @@ test "formatComma" {
     try std.testing.expectEqualStrings(written, "9,223,372,036,854,775,807");
 
     written = try std.fmt.bufPrint(&buf, "{:x>5}", .{fmtComma(@as(u32, @intCast(789)))});
-    try std.testing.expectEqualStrings(written, "xx789");
+    try std.testing.expectEqualStrings(written, "  789");
 
     written = try std.fmt.bufPrint(&buf, "{:x>5}", .{fmtComma(@as(u32, @intCast(1789)))});
     try std.testing.expectEqualStrings(written, "1,789");

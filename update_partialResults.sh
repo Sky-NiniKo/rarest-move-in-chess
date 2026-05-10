@@ -62,4 +62,7 @@ curl -s "$DATABASE_URL" | while IFS= read -r url || [[ -n "$url" ]]; do
 done
 
 # Rebuild the results, doesn't work on github
-# zig build run -Doptimize=ReleaseFast -- analyze $RESULTS_DIR
+zig build run -Doptimize=ReleaseFast -- analyze $RESULTS_DIR
+
+# Cleanup
+rm .zig-cache

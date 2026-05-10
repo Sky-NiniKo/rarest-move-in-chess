@@ -11,6 +11,8 @@ jobs:
       pull-requests: write
     steps:
       - uses: actions/checkout@v4
+        with:
+          ref: update-results
       - uses: mlugg/setup-zig@v2
         with:
           version: 0.13.0

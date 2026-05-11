@@ -65,4 +65,4 @@ done
 # zig build run -Doptimize=ReleaseFast -- analyze $RESULTS_DIR
 
 # Cleanup
-rm .zig-cache
+rm .zig-cache -r
